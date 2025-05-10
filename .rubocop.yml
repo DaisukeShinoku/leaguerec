@@ -60,6 +60,7 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
 RSpec/NestedGroups:
   Enabled: false
 
@@ -77,6 +78,9 @@ RSpec/NamedSubject:
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
 
 RSpec/ExampleLength:
   Max: 10
