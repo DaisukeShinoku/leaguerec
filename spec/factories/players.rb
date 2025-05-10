@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :player do
-    team { nil }
-    name { "MyString" }
+    team { association :team }
+    sequence(:name) { |n| "プレイヤー#{n}" }
   end
 end
