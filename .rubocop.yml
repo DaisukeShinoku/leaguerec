@@ -4,7 +4,6 @@ plugins:
   - rubocop-rspec
   - rubocop-capybara
   - rubocop-rspec_rails
-require:
   - rubocop-factory_bot
 AllCops:
   Exclude:
