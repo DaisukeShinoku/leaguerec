@@ -1,5 +1,9 @@
-<h1><%= @product.name %></h1>
+<div class="card">
+  <h1 class="mb-6"><%= @product.name %></h1>
 
-<%= link_to "Back", products_path %>
-<%= link_to "Edit", edit_product_path(@product) %>
-<%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+  <div class="flex space-x-4">
+    <%= link_to "Back", products_path, class: "btn btn-secondary" %>
+    <%= link_to "Edit", edit_product_path(@product), class: "btn btn-primary" %>
+    <%= button_to "Delete", @product, method: :delete, class: "btn bg-red-500 text-white hover:bg-red-600", data: { turbo_confirm: "Are you sure?" } %>
+  </div>
+</div>

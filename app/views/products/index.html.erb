@@ -1,11 +1,14 @@
-<h1>Products</h1>
+<div class="card">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="m-0">Products</h1>
+    <%= link_to "New product", new_product_path, class: "btn btn-primary" %>
+  </div>
 
-<%= link_to "New product", new_product_path %>
-
-<div id="products">
-  <% @products.each do |product| %>
-    <div>
-      <%= link_to product.name, product %>
-    </div>
-  <% end %>
+  <div id="products" class="divide-y divide-gray-200">
+    <% @products.each do |product| %>
+      <div class="py-3">
+        <%= link_to product.name, product, class: "text-lg hover:underline" %>
+      </div>
+    <% end %>
+  </div>
 </div>
